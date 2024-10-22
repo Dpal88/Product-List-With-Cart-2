@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
   
   <title>Frontend Mentor | Product list with cart</title>
 
@@ -15,10 +16,343 @@
   </style>
 </head>
 <body>
+  <section aria-labelledby="Desserts">
+    <div class="outer-container">
+    <h1>Desserts</h1>
 
-  Desserts
+    <div class="container">
 
-  Waffle with Berries
+      <!-- cards container start -->
+      <div class="cards-container">
+
+        <!-- card 1 start -->
+        <div class="card">
+
+          <div class="img-wrapper">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/images/image-waffle-mobile.jpg" />
+              <source media="(max-width: 1280px)" srcset="assets/images/image-waffle-tablet.jpg"/>
+              <img src="assets/images/image-waffle-desktop.jpg" alt="four waffles stacked on each other with powdered sugar and strawberries on top.">
+            </picture>
+            
+            <div class="btn-add">
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                  <p>Add to Cart</p>
+                </button>
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#000" d="M0 .375h10v1.25H0V.375Z"/></svg>
+                  <div>1</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#000" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+                </button>
+            </div>
+          </div>
+
+          <div id="card-info" class="card-info">
+            <div class="item-category">Waffle</div>
+            <p>Waffle with Berries</p>
+            <div class="item-price">$6.50</div>
+          </div>
+
+        </div>
+        <!-- card 1 end -->
+
+        <!-- card 2 start -->
+        <div class="card">
+
+          <div class="img-wrapper">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/images/image-creme-brulee-mobile.jpg" />
+              <source media="(max-width: 1280px)" srcset="assets/images/image-creme-brulee-tablet.jpg"/>
+              <img src="assets/images/image-creme-brulee-desktop.jpg" alt="Vanilla Bean Crème Brûlée">
+            </picture>
+            
+            <div class="btn-add">
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                  <p>Add to Cart</p>
+                </button>
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#000" d="M0 .375h10v1.25H0V.375Z"/></svg>
+                  <div>1</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#000" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+                </button>
+            </div>
+          </div>
+
+          <div id="card-info" class="card-info">
+            <div class="item-category">Crème Brûlée</div>
+            <p>Vanilla Bean Crème Brûlée</p>
+            <div class="item-price">$7.00</div>
+          </div>
+
+        </div>
+        <!-- card 2 end -->
+
+        <!-- card 3 start -->
+        <div class="card">
+
+          <div class="img-wrapper">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/images/image-macaron-mobile.jpg" />
+              <source media="(max-width: 1280px)" srcset="assets/images/image-macaron-tablet.jpg"/>
+              <img src="assets/images/image-macaron-desktop.jpg" alt="Macaron Mix of Five">
+            </picture>
+            
+            <div class="btn-add">
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                  <p>Add to Cart</p>
+                </button>
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#000" d="M0 .375h10v1.25H0V.375Z"/></svg>
+                  <div>1</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#000" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+                </button>
+            </div>
+          </div>
+
+          <div id="card-info" class="card-info">
+            <div class="item-category">Macaron</div>
+            <p>Macaron Mix of Five</p>
+            <div class="item-price">$8.00</div>
+          </div>
+
+        </div>
+        <!-- card 3 end -->
+
+        <!-- card 4 start -->
+        <div class="card">
+
+          <div class="img-wrapper">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/images/image-tiramisu-mobile.jpg" />
+              <source media="(max-width: 1280px)" srcset="assets/images/image-tiramisu-tablet.jpg"/>
+              <img src="assets/images/image-tiramisu-desktop.jpg" alt="Classic Tiramisu">
+            </picture>
+            
+            <div class="btn-add">
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                  <p>Add to Cart</p>
+                </button>
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#000" d="M0 .375h10v1.25H0V.375Z"/></svg>
+                  <div>1</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#000" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+                </button>
+            </div>
+          </div>
+
+          <div id="card-info" class="card-info">
+            <div class="item-category">Tiramisu</div>
+            <p>Classic Tiramisu</p>
+            <div class="item-price">$5.50</div>
+          </div>
+
+        </div>
+        <!-- card 4 end -->
+
+        <!-- card 5 start -->
+        <div class="card">
+
+          <div class="img-wrapper">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/images/image-baklava-mobile.jpg" />
+              <source media="(max-width: 1280px)" srcset="assets/images/image-baklava-tablet.jpg"/>
+              <img src="assets/images/image-baklava-desktop.jpg" alt="Pistachio Baklava">
+            </picture>
+            
+            <div class="btn-add">
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                  <p>Add to Cart</p>
+                </button>
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#000" d="M0 .375h10v1.25H0V.375Z"/></svg>
+                  <div>1</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#000" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+                </button>
+            </div>
+          </div>
+
+          <div id="card-info" class="card-info">
+            <div class="item-category">Baklava</div>
+            <p>Pistachio Baklava</p>
+            <div class="item-price">$4.00</div>
+          </div>
+
+        </div>
+        <!-- card 5 end -->
+
+        <!-- card 6 start -->
+        <div class="card">
+
+          <div class="img-wrapper">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/images/image-meringue-mobile.jpg" />
+              <source media="(max-width: 1280px)" srcset="assets/images/image-meringue-tablet.jpg"/>
+              <img src="assets/images/image-meringue-desktop.jpg" alt="Lemon Meringue Pie">
+            </picture>
+            
+            <div class="btn-add">
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                  <p>Add to Cart</p>
+                </button>
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#000" d="M0 .375h10v1.25H0V.375Z"/></svg>
+                  <div>1</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#000" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+                </button>
+            </div>
+          </div>
+
+          <div id="card-info" class="card-info">
+            <div class="item-category">Pie</div>
+            <p>Lemon Meringue Pie</p>
+            <div class="item-price">$5.00</div>
+          </div>
+
+        </div>
+        <!-- card 6 end -->
+
+        <!-- card 7 start -->
+        <div class="card">
+
+          <div class="img-wrapper">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/images/image-cake-mobile.jpg" />
+              <source media="(max-width: 1280px)" srcset="assets/images/image-cake-tablet.jpg"/>
+              <img src="assets/images/image-cake-desktop.jpg" alt="Red Velvet Cake">
+            </picture>
+            
+            <div class="btn-add">
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                  <p>Add to Cart</p>
+                </button>
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#000" d="M0 .375h10v1.25H0V.375Z"/></svg>
+                  <div>1</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#000" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+                </button>
+            </div>
+          </div>
+
+          <div id="card-info" class="card-info">
+            <div class="item-category">Cake</div>
+            <p>Red Velvet Cake</p>
+            <div class="item-price">$4.50</div>
+          </div>
+
+        </div>
+        <!-- card 7 end -->
+
+        <!-- card 8 start -->
+        <div class="card">
+
+          <div class="img-wrapper">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/images/image-brownie-mobile.jpg" />
+              <source media="(max-width: 1280px)" srcset="assets/images/image-brownie-tablet.jpg"/>
+              <img src="assets/images/image-brownie-desktop.jpg" alt="Salted Caramel Brownie">
+            </picture>
+            
+            <div class="btn-add">
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                  <p>Add to Cart</p>
+                </button>
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#000" d="M0 .375h10v1.25H0V.375Z"/></svg>
+                  <div>1</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#000" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+                </button>
+            </div>
+          </div>
+
+          <div id="card-info" class="card-info">
+            <div class="item-category">Brownie</div>
+            <p>Salted Caramel Brownie</p>
+            <div class="item-price">$5.50</div>
+          </div>
+
+        </div>
+        <!-- card 8 end -->
+
+        <!-- card 9 start -->
+        <div class="card">
+
+          <div class="img-wrapper">
+            <picture>
+              <source media="(max-width: 768px)" srcset="assets/images/image-panna-cotta-mobile.jpg" />
+              <source media="(max-width: 1280px)" srcset="assets/images/image-panna-cotta-tablet.jpg"/>
+              <img src="assets/images/image-panna-cotta-desktop.jpg" alt="Vanilla Panna Cotta">
+            </picture>
+            
+            <div class="btn-add">
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20"><g fill="#C73B0F" clip-path="url(#a)"><path d="M6.583 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM15.334 18.75a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5ZM3.446 1.752a.625.625 0 0 0-.613-.502h-2.5V2.5h1.988l2.4 11.998a.625.625 0 0 0 .612.502h11.25v-1.25H5.847l-.5-2.5h11.238a.625.625 0 0 0 .61-.49l1.417-6.385h-1.28L16.083 10H5.096l-1.65-8.248Z"/><path d="M11.584 3.75v-2.5h-1.25v2.5h-2.5V5h2.5v2.5h1.25V5h2.5V3.75h-2.5Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M.333 0h20v20h-20z"/></clipPath></defs></svg>
+                  <p>Add to Cart</p>
+                </button>
+                
+                <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2"><path fill="#000" d="M0 .375h10v1.25H0V.375Z"/></svg>
+                  <div>1</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#000" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/></svg>
+                </button>
+            </div>
+          </div>
+
+          <div id="card-info" class="card-info">
+            <div class="item-category">Panna Cotta</div>
+            <p>Vanilla Panna Cotta</p>
+            <div class="item-price">$6.50</div>
+          </div>
+
+        </div>
+        <!-- card 9 end -->
+
+      </div>
+      <!-- cards container end -->
+
+      <!-- cart container start -->
+      <div class="cart-container">
+
+        <div class="empty-cart">
+
+        </div>
+
+        <div class="full-cart">
+
+        </div>
+
+      </div>
+      <!-- cart container end -->
+
+    </div>
+  </div>
+  </section>
+
+  <!-- Waffle with Berries
   Waffle
   6.50
   Add to Cart
@@ -63,12 +397,13 @@
   6.50
   Add to Cart
 
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
+  Your Cart (quantity)
+  Your added items will appear here -->
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+  <script src="js/script.js"></script>
 </body>
 </html>

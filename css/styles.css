@@ -1,0 +1,150 @@
+:root {
+    --red: hsl(14, 86%, 42%);
+    --green: hsl(159, 69%, 38%);
+
+    --rose-50: hsl(20, 50%, 98%);
+    --rose-100: hsl(13, 31%, 94%);
+    --rose-300: hsl(14, 25%, 72%);
+    --rose-400: hsl(7, 20%, 60%);
+    --rose-500: hsl(12, 20%, 44%);
+    --rose-900: hsl(14, 65%, 9%);
+
+    --white: #fff;
+    --black: #000;
+
+    --spacing-50: 0.25rem;
+    --spacing-100: 0.5rem;
+    --spacing-150: 0.75rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2rem;
+    --spacing-500: 2.5rem;
+}
+
+@font-face {
+    font-family: 'Red Hat';
+    src: url(../assets/fonts/RedHatText-VariableFont_wght.woff2) format('woff2');
+    font-weight: 300 700;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Red Hat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    background: var(--rose-50);
+    padding: 1.5rem;
+}
+
+h1 {
+    color: var(--rose-900);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+    margin-top: var(--spacing-400);
+
+    .cards-container {
+        display: grid;
+        gap: var(--spacing-300);
+
+        .card {
+
+            /* -------------------------------------- */
+            /* --------- Card Image Section --------- */
+            /* -------------------------------------- */
+            .img-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    border-radius: 0.625rem;
+                }
+
+                .btn-add {
+                    width: 10rem;
+                    height: 2.5rem;
+                    position: relative;
+                    bottom: 1.5rem;
+
+                    button {
+                        background: var(--white);
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        padding: var(--spacing-150);
+                        border: 1px solid #000;
+                        border-radius: 20px;
+                        position: absolute;
+                        
+                        
+                    }
+                    button:first-child {
+                        justify-content: center;
+                        svg {
+                            margin-right: var(--spacing-100);
+                        }
+                    }
+                    button:last-child {
+                        justify-content: space-between;
+                        display: none;
+                    }
+                }
+            }
+            /* -------------------------------------- */
+            /* --------- Card Info Section --------- */
+            /* -------------------------------------- */
+            .card-info {
+                display: grid;
+                gap: var(--spacing-50);
+
+                .item-category {
+                    color: var(--rose-500);
+                }
+                p {
+                    color: var(--rose-900);
+                    font-weight: 500;
+                }
+                .item-price {
+                    color: var(--red);
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+/* -------------------------------------- */
+/* ----------- Media Queries ------------ */
+/* -------------------------------------- */
+@media (min-width: 768px) {
+    section {
+        display: flex;
+        justify-content: center;
+
+        .outer-container {
+            max-width: 768px;
+
+            .cards-container {
+                grid-template-columns: repeat(3, 1fr);
+                padding: var(--spacing-500);
+            }
+        }
+    }
+    
+    
+}
